@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbitron V2 | Liquid Icons</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+    
+<button id="floatingHome" class="floating-home" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    🏠
+</button>
+
+
+<body>
+
+
+
+<div class="container">
+    <header><h1>FUTURE LIBRARY</h1></header>
+
+    <div class="sticky-nav">
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search subject or class..." onkeyup="filter()">
+        </div>
+        <div class="slider">
+            <button class="btn active" onclick="filterClass('all', this)">All Classes</button>
+            <button class="btn" onclick="filterClass('1', this)">Class 1</button>
+            <button class="btn" onclick="filterClass('2', this)">Class 2</button>
+            <button class="btn" onclick="filterClass('3', this)">Class 3</button>
+            <button class="btn" onclick="filterClass('4', this)">Class 4</button>
+            <button class="btn" onclick="filterClass('5', this)">Class 5</button>
+            <button class="btn" onclick="filterClass('6', this)">Class 6</button>
+            <button class="btn" onclick="filterClass('7', this)">Class 7</button>
+            <button class="btn" onclick="filterClass('8', this)">Class 8</button>
+        </div>
+    </div>
+
+    <div class="grid" id="bookGrid">
+        </div>
+</div>
+
+<div id="loader" class="loader-container" style="display: none;">
+    <div class="spinner"></div>
+    <p>Loading E-Book...</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
